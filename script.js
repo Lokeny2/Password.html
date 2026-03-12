@@ -1,4 +1,4 @@
-    // 1. Get the elements from the DOM
+    // 1. Getting the elements from the DOM
 const passwordInput = document.getElementById('password');
 const strengthSpan = document.getElementById('Strength');
 
@@ -41,7 +41,7 @@ passwordInput.addEventListener('input', function() {
         }
     }
 
-    // 3. Update the UI correctly
+    // 3. Update the UI accordingly 
     strengthSpan.textContent = strength;
     strengthSpan.style.color = messageColor;
 
