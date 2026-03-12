@@ -30,3 +30,20 @@ passwordInput.addEventListener('input', function() {
         if (hasLetters && hasNumbers && hasSpecial && password.length >= 10) {
             strength = 'Very Strong';
             messageColor = 'green';
+  } 
+        else if (hasLetters && hasNumbers) {
+            strength = 'Strong';
+            messageColor = 'darkgreen';
+        } 
+        else {
+            strength = 'Medium';
+            messageColor = 'orange';
+        }
+    }
+
+    // 3. Update the UI correctly
+    strengthSpan.textContent = strength;
+    strengthSpan.style.color = messageColor;
+
+    console.log(`Length: ${password.length} | Strength: ${strength}`);
+});                                                                                      
