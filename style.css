@@ -29,3 +29,14 @@ input[type="password"] {
     border-radius: 8px;
     font-size: 16px;
 }
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
